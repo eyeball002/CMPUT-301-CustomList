@@ -4,7 +4,8 @@ public class City {
     private String city;
     private String province;
 
-    City(String city, String province){
+    // For test to work, this needs to be public rather than private.
+    public City(String city, String province){
         this.city = city;
         this.province = province;
     }
