@@ -56,9 +56,14 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(c);
     }
 
-    // Always returns false; the test case will fail.
+    // Added conditional statement to return true or false.
     public boolean hasCity(City c) {
-        return false;
+        if (cities.contains(c)) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
 
