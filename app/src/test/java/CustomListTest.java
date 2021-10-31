@@ -33,7 +33,9 @@ public class CustomListTest {
 
     @Test
     public void hasCityTest() {
+        // Add city, and see if it exists within the list.
         City c = new City("Edmonton", "AB");
+        list.addCity(c);
         assertTrue(list.hasCity(c));
     }
 }
