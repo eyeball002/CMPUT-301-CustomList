@@ -30,4 +30,10 @@ public class CustomListTest {
         // See if addCity changed the list length.
         assertEquals(size + 1, list.getCount());
     }
+
+    @Test
+    public void hasCityTest() {
+        City c = new City("Edmonton", "AB");
+        assertTrue(list.hasCity(c));
+    }
 }
