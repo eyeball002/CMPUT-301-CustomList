@@ -51,6 +51,7 @@ public class CustomListTest {
 
     @Test
     public void countCitiesTest() {
+        // Get city count before and after adding cities.
         City c1 = new City("Edmonton", "AB");
         City c2 = new City("Vancouver", "BC");
         int size = list.getCount();
