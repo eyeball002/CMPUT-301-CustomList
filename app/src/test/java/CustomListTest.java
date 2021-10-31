@@ -38,4 +38,14 @@ public class CustomListTest {
         list.addCity(c);
         assertTrue(list.hasCity(c));
     }
+
+    @Test
+    public void removeCityTest() {
+        // Add city on an empty list, remove it, then check if getCount() is still zero.
+        City c = new City("Edmonton", "AB");
+        int size = list.getCount();
+        list.addCity(c);
+        list.removeCity(c);
+        assertEquals(size, list.getCount());
+    }
 }
