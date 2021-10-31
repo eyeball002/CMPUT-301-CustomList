@@ -66,7 +66,13 @@ public class CustomList extends ArrayAdapter<City> {
         }
     }
 
-    // Does not actually remove city.
+    // Remove city, if it exists within the list.
     public void removeCity(City c) {
+        if (cities.contains(c)) {
+            cities.remove(c);
+        }
+        else {
+            throw new IllegalArgumentException();
+        }
     }
 }
